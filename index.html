@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zando Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="narong_project.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="https://zandokh.com/image/catalog/avethemes/zando-logo-small.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                  </li>
+                  <li class="nav-item" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- Modal Contact-->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Feedback</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="uname" class="form-laebl">Username</label>
+                                    <input type="text" name="" id="uname" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="email" class="form-laebl">Email</label>
+                                    <input type="email" name="" id="email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="phone" class="form-laebl">Phone Number</label>
+                                    <input type="text" name="" id="phone" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="address" class="form-laebl">Address</label>
+                                    <input type="text" name="" id="address" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="message" class="form-laebl">Message</label>
+                                   <textarea name="" id="message" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </div>
+  </div>
+  <section class="container-fluid">
+    <div id="carouselExampleInterval" class="carousel slide container" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="https://github.com/NalenSrin123/zando.com/blob/main/ProjectBootstrap/banner1.jpg?raw=true" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="https://github.com/NalenSrin123/zando.com/blob/main/ProjectBootstrap/banner2.jpg?raw=true" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" >
+          <img src="https://github.com/NalenSrin123/zando.com/blob/main/ProjectBootstrap/banner3.jpg?raw=true" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <section class="container-fluid mt-5">
+      <article class="container">
+        <h2>New Product</h2>
+        <div class="box-card mt-4">
+            <div class="row">
+              <div class="col-xl-3 col-6">
+                  <div class="cards">
+                      <div class="image">
+                          <img src="https://i.pinimg.com/236x/dd/de/14/ddde149b1134c4387cd174a99b8d2e31.jpg" alt="">
+                      </div>
+                      <div class="card-title">
+                          <span><b>US $90</b></span>
+                          <span>Regular Polo Shirts</span>
+                          <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-6">
+                  <div class="cards">
+                      <div class="image">
+                          <img src="https://i.pinimg.com/236x/d9/7e/2b/d97e2bb5be41b03fd669cab3a8ec4862.jpg" alt="">
+                      </div>
+                      <div class="card-title">
+                          <span><b>US $200</b></span>
+                          <span>Regular Polo Shirts</span>
+                          <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-6">
+                  <div class="cards">
+                      <div class="image">
+                          <img src="https://i.pinimg.com/236x/16/e3/d7/16e3d7068ba0a5b640a544874f703852.jpg" alt="">
+                      </div>
+                      <div class="card-title">
+                          <span><b>US $150</b></span>
+                          <span>Regular Polo Shirts</span>
+                          <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-6">
+                  <div class="cards">
+                      <div class="image">
+                          <img src="https://i.pinimg.com/736x/a7/12/b2/a712b2cf3243b495d1bea24865aba8d4.jpg" alt="">
+                      </div>
+                      <div class="card-title">
+                          <span><b>US $80</b></span>
+                          <span>Regular Polo Shirts</span>
+                          <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </article>
+  </section>
+  <section class="container-fluid mt-5">
+      <article class="container">
+        <h2>Promotion Product</h2>
+        <div class="box-card mt-4">
+            <div class="row">
+              <div class="col-xl-3 col-6">
+                  <div class="cards">
+                      <div class="image">
+                          <img src="https://i.pinimg.com/236x/b8/25/f7/b825f7e70003fc3b970fa4fab4dc92e2.jpg" alt="">
+                      </div>
+                      <div class="card-title">
+                          <span><b>US $90</b></span>
+                          <span>Regular Polo Shirts</span>
+                          <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-6">
+                  <div class="cards">
+                      <div class="image">
+                          <img src="https://i.pinimg.com/236x/3c/f8/20/3cf8207b549573f3298d865826f17660.jpg" alt="">
+                      </div>
+                      <div class="card-title">
+                          <span><b>US $110</b></span>
+                          <span>Regular Polo Shirts</span>
+                          <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-6">
+                  <div class="cards">
+                      <div class="image">
+                          <img src="https://i.pinimg.com/236x/e1/14/c4/e114c4010c235a04756f2fb9ff029117.jpg" alt="">
+                      </div>
+                      <div class="card-title">
+                          <span><b>US $70</b></span>
+                          <span>Regular Polo Shirts</span>
+                          <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-6">
+                  <div class="cards">
+                      <div class="image">
+                          <img src="https://i.pinimg.com/236x/7e/d7/c9/7ed7c9e591e599d8b592027aabf3ebf4.jpg" alt="">
+                      </div>
+                      <div class="card-title">
+                          <span><b>US $60</b></span>
+                          <span>Regular Polo Shirts</span>
+                          <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </article>
+  </section>
+  <section class="container-fluid mt-5">
+      <article class="container">
+        <h2>Popular Product</h2>
+        <div class="box-card mt-4">
+            <div class="row">
+              <div class="col-xl-3 col-6">
+                  <div class="cards">
+                      <div class="image">
+                          <img src="https://i.pinimg.com/236x/99/fb/fc/99fbfc8411d2e7e9faa80590b089565b.jpg" alt="">
+                      </div>
+                      <div class="card-title">
+                          <span><b>US $40</b></span>
+                          <span>Regular Polo Shirts</span>
+                          <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-6">
+                  <div class="cards">
+                      <div class="image">
+                          <img src="https://i.pinimg.com/474x/a3/2c/2e/a32c2e41ad7cafa104fbc8b0b8707deb.jpg" alt="">
+                      </div>
+                      <div class="card-title">
+                          <span><b>US $30</b></span>
+                          <span>Regular Polo Shirts</span>
+                          <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-6">
+                  <div class="cards">
+                      <div class="image">
+                          <img src="https://i.pinimg.com/236x/cb/d3/4d/cbd34d5ecb5fa3aff25e76955c314260.jpg" alt="">
+                      </div>
+                      <div class="card-title">
+                          <span><b>US $35</b></span>
+                          <span>Regular Polo Shirts</span>
+                          <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-6">
+                  <div class="cards">
+                      <div class="image">
+                          <img src="https://i.pinimg.com/236x/77/37/90/7737907192f0464e2e07fc899342e79b.jpg" alt="">
+                      </div>
+                      <div class="card-title">
+                          <span><b>US $50</b></span>
+                          <span>Regular Polo Shirts</span>
+                          <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </article>
+  </section>
+  <footer class="container-fluid bg-dark mt-5 p-5">
+      <div class="footer container ">
+          <div class="row">
+            <div class="col-xl-3 col-12">
+                <div class="app">
+                  <h4 class="text-light">ZANDO APP</h4>
+                  <img src="https://zandokh.com/image/catalog/logo/qr_code_app.png" alt="">
+                </div>
+            </div>
+            <div class="col-xl-3 col-12">
+                <div class="about">
+                  <h4 class="text-light">FOLLOW US</h4>
+                  <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook me-2"></i>FaceBook</a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram me-2"></i>Instagram</a></li>
+                    <li><a href="#"><i class="fa-brands fa-tiktok me-2"></i>Tik Tok</a></li>
+                    <li><a href="#"> <i class="fa-brands fa-youtube me-2"></i>YouTube</a></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="col-xl-3 col-12">
+                <div class="about">
+                  <h4 class="text-light">CUSTOMER SERVICES</h4>
+                  <ul>
+                    <li><a href="#"><i class="fa-regular fa-circle-question me-2"></i>Online exchange policy</a></li>
+                    <li><a href="#"><i class="fa-solid fa-shield-halved me-2"></i>Privacy Policy</a></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp me-2"></i>FAQs & guides</a></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="col-xl-3 col-12">
+                <div class="bank">
+                  <h4 class="text-light">CUSTOMER SERVICES</h4>
+                  <img src="https://zandokh.com/image/catalog/logo/web-footer/We-accept-payment%E2%80%93for-web-footer-1.png" alt="">
+                </div>
+            </div>
+          </div>
+      </div>
+  </footer>
+</body>
+</html>
